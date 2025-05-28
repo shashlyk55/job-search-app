@@ -1,0 +1,15 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #1a2a4d; /* ✅ Темный фон */
+    color: white;
+}
+/* 
+.applicant-profile,
+.employer-profile {
+    width: 100%;
+    max-width: 900px;
+} */

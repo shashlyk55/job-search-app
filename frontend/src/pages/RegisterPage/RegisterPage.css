@@ -1,0 +1,97 @@
+/* Основной контейнер */
+#register_div {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border: 1px solid #1e3a5f; /* Тёмно-синий оттенок */
+    border-radius: 10px;
+    background-color: #0d1b2a; /* Очень тёмный синий */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    color: #d1e8ff; /* Светлый синий для текста */
+}
+
+/* Заголовок */
+#register_div h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #89c2d9; /* Нежный голубой оттенок */
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+#register_div input[type="text"],
+#register_div input[type="email"],
+#register_div input[type="password"],
+#register_div input[type="phone"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #89c2d9;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1e3a5f; /* Темно-синий фон */
+    color: #d1e8ff; /* Светлый текст */
+}
+
+#register_div input::placeholder {
+    color: #9bbad1; /* Бледный голубой */
+}
+
+/* Радиокнопки */
+#roles_div span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#roles_div label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #d1e8ff;
+}
+
+#roles_div input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+    accent-color: #89c2d9; /* Цвет выбранной кнопки */
+}
+
+/* Кнопка регистрации */
+#register_div button {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: #1d3557; /* Тёмно-синий */
+    color: #d1e8ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register_div button:hover {
+    background-color: #457b9d; /* Яркий синий при наведении */
+}
+
+/* Ссылка на вход */
+#register_div a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #89c2d9;
+    font-size: 14px;
+}
+
+#register_div a:hover {
+    text-decoration: underline;
+}
+
+/* Сообщение об ошибке */
+#register_div .error-text {
+    color: #e63946; /* Красный для ошибок */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}

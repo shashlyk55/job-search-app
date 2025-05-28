@@ -1,0 +1,42 @@
+.compact-resume {
+    width: 100%; /* Заполняет всю ширину контейнера резюме */
+    background-color: #112644;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.compact-resume:hover {
+    background-color: #2a4369;
+    transform: scale(1.02);
+}
+
+.resume-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1e8ff;
+    text-align: center;
+}
+
+.resume-biography {
+    font-size: 14px;
+    color: #b0c7e4;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.resume-skills {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.resume-skill {
+    background-color: #4a90e2;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}

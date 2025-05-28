@@ -1,0 +1,15 @@
+/* Основной контейнер для страницы вакансий */
+.vacancies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #0d1b2a; /* Тёмный синий фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+}

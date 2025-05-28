@@ -1,0 +1,39 @@
+.error-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #102343;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
+}
+
+.error-notification.hidden {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+.close-button {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}

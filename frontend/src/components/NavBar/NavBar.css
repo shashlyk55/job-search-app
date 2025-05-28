@@ -1,0 +1,75 @@
+/* Основная панель навигации */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #061020; /* Ещё более тёмный синий */
+    border-bottom: 2px solid #1d3557; /* Контрастная линия */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ссылки навигации */
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #d1e8ff; /* Светлый текст */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #89c2d9; /* Голубой при наведении */
+}
+
+/* Активные ссылки */
+.nav-links a.active {
+    font-weight: bold;
+    color: #89c2d9; /* Акцентный цвет */
+    border-bottom: 2px solid #89c2d9;
+}
+
+/* Блок действий (кнопки и вход/выход) */
+.nav-actions button {
+    padding: 8px 15px;
+    background-color: #1d3557; /* Синий фон кнопки */
+    color: #d1e8ff; /* Светлый текст */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-actions button:hover {
+    background-color: #457b9d; /* Голубой при наведении */
+    transform: scale(1.05);
+}
+
+.nav-actions a {
+    text-decoration: none;
+    color: #d1e8ff;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-actions a:hover {
+    color: #89c2d9;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        margin-right: 10px;
+    }
+}

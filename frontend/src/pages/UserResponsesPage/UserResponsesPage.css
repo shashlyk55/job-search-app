@@ -1,0 +1,73 @@
+/* .applications-container {
+    max-width: 900px;
+    margin: 20px auto auto auto;
+    padding: 20px;
+    background: #1a2a4d;
+    color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-list {
+    list-style: none;
+    padding: 0;
+}
+
+.application-item {
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #283860;
+    border-radius: 6px;
+}
+
+.application-info h3 {
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.application-info p {
+    font-size: 14px;
+    color: #b0c4de;
+} */
+
+/* Основной контейнер страницы откликов */
+.applications-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #2c3e5d; /* ✅ Темно-синий фон */
+    color: white; /* ✅ Белый текст */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок страницы */
+.applications-container h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #ffcc00; /* ✅ Желтый акцент */
+    margin-bottom: 15px;
+}
+
+/* Список откликов */
+.application-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* ✅ Расстояние между элементами списка */
+}
+
+/* Сообщение, если нет откликов */
+.applications-container p {
+    /* text-align: center; */
+    font-size: 16px;
+    color: #c7d7ff;
+}
+

@@ -1,0 +1,32 @@
+.join-requests-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #2c3e5d; /* ✅ Чуть светлее фон */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+/* Заголовок страницы */
+.join-requests-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* ✅ Желтый акцент */
+    margin-bottom: 20px;
+}
+
+/* Контейнер списка запросов */
+.requests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Сообщение об отсутствии запросов */
+.join-requests-container p {
+    font-size: 18px;
+    color: #c7d7ff;
+}

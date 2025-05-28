@@ -1,0 +1,119 @@
+.employer-profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #2c3e5d; /* ✅ Чуть светлее фон */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок профиля */
+.employer-profile-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffcc00; /* ✅ Желтый акцент */
+    margin-bottom: 20px;
+}
+
+
+.employer-profile-container .profile-info .container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/* Блок контактных данных */
+.employer-profile-container .profile-info p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* Кнопка редактирования */
+.employer-profile-container .edit-button {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ffcc00; /* ✅ Жёлтая кнопка */
+    color: #1a2a4d;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.employer-profile-container .edit-button:hover {
+    background: #e6b800;
+}
+
+/* Блок информации о компании */
+.employer-profile-container .company-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.employer-profile-container .company-info h3 {
+    color: #ffcc00; /* ✅ Акцент */
+}
+
+/* Кнопка выхода из компании */
+.employer-profile-container .leave-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #dc3545; /* ✅ Красная кнопка */
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.employer-profile-container .leave-button:hover {
+    background: #c82333;
+}
+
+/* Блок отправки запроса на присоединение к компании */
+.employer-profile-container .company-join {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Кнопка отмены запроса */
+.employer-profile-container .cancel-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #dc3545;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.employer-profile-container .cancel-button:hover {
+    background: #c82333;
+}
+
+/* Поля ввода */
+.employer-profile-container input,
+.employer-profile-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,16 @@
+.company-vacancies-container {
+    width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #2c3e5d; /* ✅ Чуть светлее фон */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+/* Сообщение о статусе компании */
+.company-vacancies-container h3 {
+    font-size: 20px;
+    color: #ffcc00; /* ✅ Желтый акцент */
+}

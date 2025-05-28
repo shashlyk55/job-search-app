@@ -1,0 +1,118 @@
+/* Фон для затемнения */
+.apply-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ✅ Затемнённый фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Основное окно */
+.apply-modal {
+    background: #2c3e5d; /* ✅ Темно-синий фон */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    width: 480px;
+    max-width: 90%;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Заголовок */
+.apply-modal h3 {
+    font-size: 22px;
+    color: #ffcc00; /* ✅ Акцент */
+    margin-bottom: 15px;
+}
+
+/* Поля ввода и выбора */
+.apply-modal label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.apply-modal select,
+.apply-modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #1a2a4d;
+    color: white;
+}
+
+.apply-modal textarea {
+    height: 120px;
+}
+
+.apply-modal select:focus,
+.apply-modal textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Ошибки */
+.err-text {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Кнопки */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.apply-button,
+.cancel-button {
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin: 0;
+}
+
+.apply-button {
+    background-color: #ffcc00;
+    color: #1a2a4d;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.apply-button:hover {
+    background: #e6b800;
+}
+
+.cancel-button:hover {
+    background: #c82333;
+}

@@ -1,0 +1,72 @@
+/* Фон для затемнения */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемнённый фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Основное окно */
+.modal-content {
+    background: #283860;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+}
+
+/* Заголовок */
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Поля ввода */
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Ошибки */
+.err-text {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Кнопки */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.save-button,
+.cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}

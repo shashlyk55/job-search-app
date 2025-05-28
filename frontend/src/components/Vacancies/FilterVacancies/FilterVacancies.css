@@ -1,0 +1,50 @@
+/* Контейнер для фильтров вакансий */
+.filters-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #1d3557; /* Тёмно-синий фон */
+    border: 1px solid #457b9d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #d1e8ff; /* Светлый текст */
+}
+
+/* Поля ввода */
+.filters-container input,
+.filters-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #89c2d9;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #0d1b2a; /* Тёмный фон */
+    color: #d1e8ff; /* Светлый текст */
+}
+
+.filters-container input::placeholder {
+    color: #9bbad1; /* Бледный голубой */
+}
+
+/* Кнопки фильтров */
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-buttons button {
+    width: 48%;
+    padding: 10px;
+    background-color: #457b9d; /* Голубой фон кнопок */
+    color: #d1e8ff; /* Светлый текст */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #1d3557; /* Тёмно-синий при наведении */
+    transform: scale(1.05);
+}

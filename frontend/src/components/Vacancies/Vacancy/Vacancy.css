@@ -1,0 +1,87 @@
+.vacancy-card {
+    background: #1a2a4d; /* ✅ Темный фон */
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vacancy-card:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Контейнер информации */
+.vacancy-card .vacancy-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 100px;
+    color: #c7d7ff;
+}
+
+/* Название вакансии */
+.vacancy-card .vacancy-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vacancy-card .vacancy-name a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.vacancy-card .vacancy-name a:hover {
+    text-decoration: underline;
+}
+
+/* Название компании */
+.vacancy-card .vacancy-company {
+    font-size: 18px;
+}
+
+/* Дополнительная информация */
+.vacancy-card .vacancy-info {
+    font-size: 14px;
+}
+
+/* Блок зарплаты и кнопки */
+.vacancy-card .vacancy-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+/* Зарплата */
+.vacancy-card .vacancy-salary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Кнопка отклика */
+.vacancy-card .vacancy-button {
+    padding: 8px 12px;
+    background: #ffcc00;
+    color: #1a2a4d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.vacancy-card .vacancy-button:hover {
+    background: #e6b800;
+}
+
+.vacancy-card .vacancy-button:disabled {
+    background: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

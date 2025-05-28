@@ -1,0 +1,87 @@
+.company-vacancy-card {
+    background: #1a2a4d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.company-vacancy-card:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Заголовок */
+.company-vacancy-card h3 {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.company-vacancy-card a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.company-vacancy-card a:hover {
+    cursor: pointer;
+}
+
+.company-vacancy-card .vacancy-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+/* Данные вакансии */
+.company-vacancy-card p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Контейнер кнопок */
+.company-vacancy-card .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-vacancy-card .action-buttons button{
+    height: 40px;
+    margin: 0;
+}
+
+/* Кнопка редактирования */
+.company-vacancy-card .edit-button {
+    padding: 8px 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.company-vacancy-card .edit-button:hover {
+    background: #217dbb;
+}
+
+/* Кнопка удаления */
+.company-vacancy-card .delete-button {
+    padding: 8px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.company-vacancy-card .delete-button:hover {
+    background: #c82333;
+}

@@ -1,0 +1,109 @@
+.request-card {
+    width: 800px;
+    background: #1a2a4d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    text-align: left;
+}
+
+/* При наведении */
+.request-card:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+.request-card > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.request-card .request-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+.request-card h3 {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+/* Данные запроса */
+.request-card p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Кнопка "Подробнее" */
+.request-card .expand-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.request-card .expand-button:hover {
+    background: #217dbb;
+}
+
+/* Детали компании */
+.request-card .company-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
+
+/* Кнопки */
+.request-card .request-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Кнопка "Принять" */
+.request-card .approve-button {
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+}
+
+.request-card .approve-button:hover {
+    background: #218838;
+}
+
+/* Кнопка "Отклонить" */
+.request-card .reject-button {
+    background: #dc3545;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+}
+
+.request-card .reject-button:hover {
+    background: #c82333;
+}

@@ -1,0 +1,96 @@
+/* Основной контейнер страницы вакансии */
+.vacancy-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: min-content;
+    background: #1a2a4d; /* ✅ Тёмно-синий фон */
+    color: white; /* ✅ Белый текст */
+    padding: 20px;
+}
+
+/* Контейнер вакансии */
+.vacancy-container {
+    max-width: 700px;
+    background: #2c3e5d; /* ✅ Чуть светлее фон */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок вакансии */
+.vacancy-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00; /* ✅ Акцентный цвет заголовка */
+    margin-bottom: 15px;
+}
+
+/* Блок информации о компании */
+.company-info-box {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* ✅ Лёгкое затемнение */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Название компании */
+.company-details h3 {
+    font-size: 20px;
+    color: #ffcc00; /* ✅ Акцентный цвет */
+}
+
+/* Детали вакансии */
+.vacancy-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Кнопки действий */
+.apply-button,
+.edit-button,
+.delete-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.apply-button {
+    background: #ffcc00; /* ✅ Жёлтая кнопка отклика */
+    color: #1a2a4d;
+}
+
+.apply-button:hover {
+    background: #e6b800;
+}
+
+.apply-button:disabled {
+    background: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Кнопки для администратора */
+.edit-button {
+    background: #3498db; /* ✅ Синяя кнопка */
+    color: white;
+}
+
+.edit-button:hover {
+    background: #217dbb;
+}
+
+.delete-button {
+    background: #dc3545; /* ✅ Красная кнопка */
+    color: white;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}

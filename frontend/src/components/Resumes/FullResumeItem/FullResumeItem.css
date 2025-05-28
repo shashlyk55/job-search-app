@@ -1,0 +1,104 @@
+.full-resume {
+    background-color: #1d3557;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #d1e8ff;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.resume-title {
+    font-size: 24px;
+    color: #89c2d9;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h3 {
+    color: #89c2d9;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.resume-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.resume-skill {
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.resume-experience {
+    padding-left: 20px;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+.resume-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #89c2d9;
+    background-color: #1d3557;
+    color: #d1e8ff;
+    margin-bottom: 10px;
+}
+.resume-input-name{
+    height: 50px;
+}
+.resume-input-bio{
+    height: 300px;
+}
+
+.skill-edit, .experience-edit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-button {
+    background-color: #e84545;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #34a853;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.delete-button {
+    background-color: #e84545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.user-card {
+    width: 800px;
+    background: #1a2a4d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* При наведении */
+.user-card:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+.user-card .user-info {
+    text-align: left;
+}
+
+/* Заголовок */
+.user-card h3 {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+/* Данные пользователя */
+.user-card p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Контейнер кнопок */
+.user-card .action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 120px;
+}
+
+/* Кнопка удаления */
+.user-card .delete-button {
+    padding: 10px 15px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.user-card .delete-button:hover {
+    background: #c82333;
+}

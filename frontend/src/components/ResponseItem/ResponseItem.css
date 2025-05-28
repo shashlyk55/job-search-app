@@ -1,0 +1,114 @@
+/* Основной контейнер отклика */
+.response-item {
+    width: 800px; 
+    background: #1a2a4d; /* ✅ Темный фон */
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    border-radius: 8px;
+    padding: 15px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* При наведении */
+.response-item:hover {
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Заголовок отклика */
+.response-item .response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Данные вакансии */
+.response-item .vacancy-name {
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.response-item .resume-name {
+    font-size: 14px;
+    color: white;
+}
+
+/* Статус отклика */
+.response-item .response-status {
+    color: white;
+    font-weight: bold;
+}
+
+/* Если отклик принят */
+.response-item .response-status span .approved {
+    color: #28a745; /* ✅ Зеленый акцент */
+}
+
+/* Если отклик отклонен */
+.response-item .response-status span .approved {
+    color: #c82333; /* ✅ Зеленый акцент */
+}
+
+.response-item .employer-message-div,
+.response-item .applicant-message-div {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+} 
+
+.response-item .applicant-message,
+.response-item .employer-message {
+    color: #c7d7ff;
+}
+
+/* Действия */
+.response-item .response-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Кнопка удаления отклика */
+.response-item .delete-response-button {
+    font-size: 14px;
+    background: #dc3545; /* ✅ Красная кнопка */
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.response-item .delete-response-button:hover {
+    background: #c82333;
+}
+
+/* Кнопка раскрытия деталей */
+.response-item .expand-button {
+    background: #3498db; /* ✅ Синяя кнопка */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.response-item .expand-button:hover {
+    background: #217dbb;
+}
+
+/* Детали отклика */
+.response-item .response-details {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
+
+/* Текст в деталях */
+.response-item .response-details p {
+    font-size: 14px;
+    color: #c7d7ff;
+}

@@ -1,0 +1,193 @@
+.response-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #1a2a4d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffcc00; /* ✅ Желтая обводка */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+/* При наведении */
+.response-card:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+.response-card .response-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.response-card .response-header .applicant-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.response-card .response-header .response-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+/* Заголовок отклика */
+.response-card .response-header h3 {
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+/* Данные отклика */
+.response-card .response-header p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Кнопка "Подробнее" */
+.response-card .expand-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.response-card .expand-button:hover {
+    background: #217dbb;
+}
+
+/* Блок деталей */
+.response-card .response-details {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.response-card .response-details h3 {
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+/* Список опыта */
+.response-card .response-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.response-card .response-details li {
+    font-size: 14px;
+    color: #c7d7ff;
+}
+
+/* Кнопки действий */
+.response-card .response-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.response-card .response-actions div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Текстовое поле для комментария */
+.response-card .response-actions textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #1a2a4d;
+    color: white;
+}
+
+.response-card .response-actions textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Кнопка "Одобрить" */
+.response-card .approve-button {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.response-card .approve-button:hover {
+    background: #218838;
+}
+
+/* Кнопка "Отклонить" */
+.response-card .reject-button {
+    width: 100%;
+    background: #dc3545;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.response-card .reject-button:hover {
+    background: #c82333;
+}
+
+/* Кнопка после отправки ответа */
+.response-card .sent-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: gray;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Сообщение работодателя */
+.response-card .pinned-message {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: white;
+}
+
+.response-card .pinned-message strong {
+    color: #ffcc00;
+}

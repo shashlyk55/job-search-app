@@ -1,0 +1,47 @@
+.applicant-profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #2c3e5d; /* ✅ Чуть светлее, чем фон */
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок */
+.applicant-profile-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffcc00; /* ✅ Желтый акцент */
+    margin-bottom: 20px;
+}
+
+.applicant-profile-container .profile-info .container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/* Данные профиля */
+.applicant-profile-container .profile-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Кнопка редактирования */
+.applicant-profile-container .edit-button {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ffcc00; /* ✅ Жёлтая кнопка */
+    color: #1a2a4d;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.applicant-profile-container .edit-button:hover {
+    background: #e6b800;
+}
